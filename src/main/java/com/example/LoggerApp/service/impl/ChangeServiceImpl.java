@@ -20,7 +20,7 @@ public class ChangeServiceImpl implements ChangeService {
 
     @Override
     public List<Change> getAll(UUID id) {
-        return changeRepository.findAll()
+        return changeRepository.findByShapeId(id)
                 .stream().map(changeMapper::changeDocumentToChange).toList();
     }
 

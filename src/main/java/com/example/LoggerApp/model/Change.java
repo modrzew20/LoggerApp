@@ -8,7 +8,8 @@ import java.util.UUID;
 @Data
 public class Change {
 
-    private UUID id;
+    private String id;
+    private UUID shapeId;
     private LocalDateTime changedDate;
     private String changedBy;
     private String parameterName;

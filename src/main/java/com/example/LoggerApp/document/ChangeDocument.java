@@ -12,13 +12,14 @@ import java.util.UUID;
 
 
 @Document
-@Getter @Setter
+@Getter
+@Setter
 public class ChangeDocument {
 
     @Id
     @Setter(AccessLevel.NONE)
-    private UUID id;
-
+    private String id;
+    private UUID shapeId;
     @CreatedDate
     @Setter(AccessLevel.NONE)
     private LocalDateTime changedDate;

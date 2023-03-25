@@ -4,7 +4,7 @@ import com.example.LoggerApp.document.ChangeDocument;
 import com.example.LoggerApp.model.Change;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ChangeMapper {
 
     Change changeDocumentToChange(ChangeDocument changeDocument);
